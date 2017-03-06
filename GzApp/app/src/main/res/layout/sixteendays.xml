@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/black4">
+
+    <ImageButton
+        android:id="@+id/ib_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/cancel"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:background="@null"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="30dp" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/date"
+        android:textSize="20sp"
+        android:textStyle="normal|bold"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_light" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:layout_marginTop="10dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_height="28dp"
+            android:background="@android:color/transparent">
+            <TextView
+                android:text="TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/cond"
+                android:background="@android:color/transparent"
+                android:textColor="@android:color/background_light"
+                android:textSize="20sp"
+                android:textStyle="normal|bold"
+                android:layout_marginLeft="20dp" />
+            <TextView
+                android:text="TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/desc"
+                android:background="@android:color/transparent"
+                android:textColor="@android:color/background_light"
+                android:textSize="18sp"
+                android:layout_marginLeft="20dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/icon_temp"
+            android:layout_weight="0.00"
+            android:background="@drawable/sunrise" />
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/morn"
+            android:background="@android:color/transparent"
+            android:textColor="@android:color/background_light"
+            android:textSize="16sp"
+            android:layout_weight="0.00" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView"
+            android:background="@drawable/sun" />
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/day"
+            android:background="@android:color/transparent"
+            android:textColor="@android:color/background_light"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView2"
+            android:background="@drawable/sundown" />
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/eve"
+            android:background="@android:color/transparent"
+            android:textColor="@android:color/background_light"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView3"
+            android:background="@drawable/sleep" />
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/night"
+            android:textSize="16sp"
+            android:textColor="@android:color/background_light" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:layout_marginTop="5dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/icon_hum"
+
+            android:background="@drawable/humidity2"
+            android:layout_marginLeft="5dp" />
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/hum"
+
+            android:background="@android:color/transparent"
+            android:textColor="@android:color/background_light"
+            android:textSize="20sp"
+            android:layout_marginLeft="90dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:layout_marginTop="5dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:id="@+id/icon_pres"
+            android:background="@drawable/pressure2"
+            android:layout_marginLeft="5dp" />
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/pres"
+            android:background="@android:color/transparent"
+            android:textColor="@android:color/background_light"
+            android:layout_marginLeft="90dp"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:layout_marginTop="5dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:id="@+id/icon_cloud"
+            android:background="@drawable/clouds2"
+            android:layout_marginLeft="5dp" />
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/clouds"
+
+            android:background="@android:color/transparent"
+            android:textColor="@android:color/background_light"
+            android:textSize="20sp"
+            android:layout_marginLeft="90dp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:layout_marginTop="5dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:id="@+id/icon_wind"
+            android:background="@drawable/wind2"
+            android:layout_marginLeft="5dp" />
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/wind"
+            android:background="@android:color/transparent"
+            android:textColor="@android:color/background_light"
+            android:textSize="20sp"
+            android:layout_marginLeft="90dp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:layout_marginTop="5dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:id="@+id/icon_deg"
+
+            android:background="@drawable/deg2"
+            android:layout_marginLeft="5dp" />
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/deg"
+
+            android:background="@android:color/transparent"
+            android:textColor="@android:color/background_light"
+            android:layout_marginLeft="90dp"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp">
+
+    </LinearLayout>
+</LinearLayout>

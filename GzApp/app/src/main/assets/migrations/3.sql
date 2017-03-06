@@ -1,0 +1,1 @@
+ALTER TABLE Weather ADD COLUMN icon TEXT;

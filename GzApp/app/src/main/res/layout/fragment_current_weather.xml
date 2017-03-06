@@ -1,0 +1,252 @@
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.vlad.gzapp.Fragments.CurrentWeatherFragment"
+    android:background="@drawable/black3">
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:layout_width="95dp"
+                android:layout_height="wrap_content"
+                app:srcCompat="@mipmap/ic_launcher"
+                android:id="@+id/icon"
+                android:background="@android:color/transparent" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent">
+                <TextView
+                    android:text="TextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/cond"
+                    android:background="@android:color/transparent"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="20sp"
+                    android:textStyle="normal|bold"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="90dp" />
+                <TextView
+                    android:text="TextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/desc"
+                    android:background="@android:color/transparent"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="18sp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="90dp" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@mipmap/ic_launcher"
+                android:id="@+id/icon_temp"
+                android:layout_weight="0.35"
+                android:background="@android:color/transparent" />
+
+            <TextView
+                android:text="TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/min_temp"
+                android:layout_weight="0.18"
+                android:background="@android:color/transparent"
+                android:textColor="@android:color/background_light"
+                android:layout_marginTop="20dp"
+                android:textSize="16sp" />
+
+            <TextView
+                android:text="TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/temp"
+                android:layout_weight="0.35"
+                android:background="@android:color/transparent"
+                android:textColor="@android:color/background_light"
+                android:layout_marginTop="20dp"
+                android:textSize="20sp"
+                android:textStyle="normal|bold" />
+
+            <TextView
+                android:text="TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/max_temp"
+                android:layout_weight="0.35"
+                android:background="@android:color/transparent"
+                android:textColor="@android:color/background_light"
+                android:layout_marginTop="20dp"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@mipmap/ic_launcher"
+                android:id="@+id/icon_hum"
+                android:layout_weight="0.46"
+                android:background="@android:color/transparent" />
+
+            <TextView
+                android:text="TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/hum"
+                android:layout_weight="2.2"
+                android:background="@android:color/transparent"
+                android:textColor="@android:color/background_light"
+                android:layout_marginTop="20dp"
+                android:textSize="20sp"
+                android:layout_marginLeft="90dp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@mipmap/ic_launcher"
+                android:id="@+id/icon_pres"
+                android:layout_weight="0.46"
+                android:background="@android:color/transparent" />
+
+            <TextView
+                android:text="TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/pres"
+                android:layout_weight="2.2"
+                android:background="@android:color/transparent"
+                android:textColor="@android:color/background_light"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="90dp"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@mipmap/ic_launcher"
+                android:id="@+id/icon_cloud"
+                android:layout_weight="0.46"
+                android:background="@android:color/transparent" />
+
+            <TextView
+                android:text="TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/clouds"
+                android:layout_weight="2.2"
+                android:background="@android:color/transparent"
+                android:textColor="@android:color/background_light"
+                android:textSize="20sp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="90dp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@mipmap/ic_launcher"
+                android:id="@+id/icon_wind"
+                android:layout_weight="0.46"
+                android:background="@android:color/transparent" />
+
+            <TextView
+                android:text="TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/wind"
+                android:layout_weight="2.2"
+                android:background="@android:color/transparent"
+                android:textColor="@android:color/background_light"
+                android:textSize="20sp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="90dp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@mipmap/ic_launcher"
+                android:id="@+id/icon_deg"
+                android:layout_weight="0.46"
+                android:background="@android:color/transparent" />
+
+            <TextView
+                android:text="TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/deg"
+                android:layout_weight="2.2"
+                android:background="@android:color/transparent"
+                android:textColor="@android:color/background_light"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="90dp"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
+</FrameLayout>

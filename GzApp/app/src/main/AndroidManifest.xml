@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.vlad.gzapp">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:name=".Application.MyApplication">
+        <!-- Notice this tag which provides the database name -->
+        <meta-data
+            android:name="AA_DB_NAME"
+            android:value="mydatabase.db" />
+
+        <!-- Notice this tag which provides the database version -->
+        <meta-data
+            android:name="AA_DB_VERSION"
+            android:value="9" />
+
+        <activity android:name=".Activities.BaseActivity"
+                  android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Activities.MainActivity"></activity>
+        <activity android:name=".Activities.WeatherAllInformation"></activity>
+        <activity android:name=".Activities.Favorites"></activity>
+        <activity android:name=".Activities.SplashScreenActivity"></activity>
+    </application>
+<uses-permission android:name="android.permission.INTERNET"></uses-permission>
+</manifest>
